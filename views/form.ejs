@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post">
+        <p>
+            <label>
+                    Név: <br>
+                    <input name="name" id="name" type="text">
+            </label>
+            <label id="namehiba" style="color: red; display: none;">Név nem lehet ures</label>
+        </p>
+        <p>
+            <label>
+                    Tipus: <br>
+                    <input name="model" id="model" type="text">
+            </label>
+            <label id="modelhiba" style="color: red; display: none;">Model nem lehet ures</label>
+ 
+        </p>
+        <p>
+            <label>
+                    Szín: <br>
+                    <input type="color" id="phonecolor" name="phonecolor">
+            </label>
+        </p>    
+        <p>
+            <label>
+                    Ár: <br>
+                    <input type="number" id="price" name="price">
+            </label>
+            <label id="pricehiba" style="color: red; display: none;">Ár nem lehet ures és nullánál kisebb vgay betu</label>
+ 
+        </p> 
+        <p>
+            <label>
+                    Akkumulátor állapota: <br>
+                    <input type="range" id="range" min="1" max="100" name="battery">
+            </label>
+        </p>
+        <p>
+            <label>
+                    Telefon állapota: <br>
+                   <select name="condition" id="condition">
+                    <option value="New">Új</option>
+                    <option value="Like-new">Új-szerű</option>
+                    <option value="Scratchy">Karcos</option>
+                   </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" id="submit" value="OK">
+        </p>    
+    </form>
+
+    <script src="/validation.js"></script>
+
+</body>
+</html>

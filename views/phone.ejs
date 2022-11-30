@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+</head>
+<body>
+
+    <br>
+    <div style="
+         width: 500px;
+         height: 800px;
+         border: 5px solid <%= phonecolor %>;
+         border-radius: 25px;
+         margin: 0 auto ">
+
+        <center>
+            <progress  style="
+            margin: 0 auto;" 
+            value= "<%= battery %>" 
+            max="100"></progress> <br><br><br><br>
+
+            <p>Name: <%= name %></p>
+            <p>Model: <%= model %></p>
+            <p>Price: <%= price %></p>
+            <p>Condition: <%= condition %></p>
+        </center>
+    </div>
+
+</body>
+</html>
